@@ -1,0 +1,268 @@
+{
+  "STACK": {
+
+    "AUS": [
+          {
+            "Coal": "1,954.9",
+            "Oil": "2,276.7",
+            "Gas": "1,464.4",
+            "Renewables": 360.2
+          },
+          {
+            "Coal": "1,930.0",
+            "Oil": "2,315.1",
+            "Gas": "1,496.7",
+            "Renewables": 379.1
+          },
+          {
+            "Coal": "1,847.3",
+            "Oil": "2,400.3",
+            "Gas": "1,557.3",
+            "Renewables": 382.5
+          },
+          {
+            "Coal": "1,801.6",
+            "Oil": "2,407.3",
+            "Gas": "1,586.5",
+            "Renewables": 400.2
+          },
+          {
+            "Coal": "1,706.6",
+            "Oil": "2,241.2",
+            "Gas": "1,647.2",
+            "Renewables": 418.8
+          }
+    ],
+
+    "NSW": [
+        {
+          "Coal": 620.9,
+          "Oil": 633.2,
+          "Gas": 156.4,
+          "Renewables": 82.4
+        },
+        {
+          "Coal": 625.9,
+          "Oil": 652.2,
+          "Gas": 133.7,
+          "Renewables": 84.5
+        },
+        {
+          "Coal": 636.7,
+          "Oil": 672.4,
+          "Gas": 133.8,
+          "Renewables": 86.6
+        },
+        {
+          "Coal": 640.3,
+          "Oil": 665,
+          "Gas": 131.4,
+          "Renewables": 90.4
+        },
+        {
+          "Coal": 606.6,
+          "Oil": 611.4,
+          "Gas": 132.9,
+          "Renewables": 95.6
+        }
+    ],
+
+    "VIC": [
+      {
+        "Coal": 617.4,
+        "Oil": 506.9,
+        "Gas": 280.9,
+        "Renewables": 62.3
+      },
+      {
+        "Coal": 577.3,
+        "Oil": 512.3,
+        "Gas": 283.4,
+        "Renewables": 65.6
+      },
+      {
+        "Coal": 467.4,
+        "Oil": 518.7,
+        "Gas": 291.3,
+        "Renewables": 66.1
+      },
+      {
+        "Coal": 444.1,
+        "Oil": 509,
+        "Gas": 283.9,
+        "Renewables": 72
+      },
+      {
+        "Coal": 423.2,
+        "Oil": 454,
+        "Gas": 283.4,
+        "Renewables": 77.4
+      }
+    ],
+
+    "QLD": [
+      {
+        "Coal": 517.8,
+        "Oil": 541.4,
+        "Gas": 294.7,
+        "Renewables": 120.4
+      },
+      {
+        "Coal": 544.2,
+        "Oil": 562.8,
+        "Gas": 307.8,
+        "Renewables": 129.6
+      },
+      {
+        "Coal": 570.6,
+        "Oil": 579.8,
+        "Gas": 300.6,
+        "Renewables": 120.6
+      },
+      {
+        "Coal": 554,
+        "Oil": 564.9,
+        "Gas": 292.6,
+        "Renewables": 123.9
+      },
+      {
+        "Coal": 524.3,
+        "Oil": 536.2,
+        "Gas": 311.8,
+        "Renewables": 127
+      }
+    ],
+
+    "WA": [
+      {
+        "Coal": 136.4,
+        "Oil": 402.5,
+        "Gas": 562.8,
+        "Renewables": 21.9
+      },
+      {
+        "Coal": 145.9,
+        "Oil": 410,
+        "Gas": 594.7,
+        "Renewables": 24.8
+      },
+      {
+        "Coal": 136.2,
+        "Oil": 405.5,
+        "Gas": 644.1,
+        "Renewables": 25
+      },
+      {
+        "Coal": 126.8,
+        "Oil": 442.2,
+        "Gas": 668.7,
+        "Renewables": 27.3
+      },
+      {
+        "Coal": 119.5,
+        "Oil": 430,
+        "Gas": 693.4,
+        "Renewables": 29.1
+      }
+    ],
+
+    "TAS": [
+      {
+        "Coal": 9.7,
+        "Oil": 38.1,
+        "Gas": 12.4,
+        "Renewables": 40.9
+      },
+      {
+        "Coal": 10.7,
+        "Oil": 36.9,
+        "Gas": 12.6,
+        "Renewables": 41.9
+      },
+      {
+        "Coal": 10.5,
+        "Oil": 38.1,
+        "Gas": 13.4,
+        "Renewables": 45.9
+      },
+      {
+        "Coal": 10,
+        "Oil": 40.3,
+        "Gas": 10,
+        "Renewables": 46.6
+      },
+      {
+        "Coal": 8.3,
+        "Oil": 37.3,
+        "Gas": 6.8,
+        "Renewables": 47.4
+      }
+    ],
+
+    "SA": [
+      {
+        "Coal": 52.6,
+        "Oil": 121.1,
+        "Gas": 107.4,
+        "Renewables": 31.6
+      },
+      {
+        "Coal": 26.1,
+        "Oil": 106.5,
+        "Gas": 116.4,
+        "Renewables": 31.9
+      },
+      {
+        "Coal": 25.9,
+        "Oil": 143.5,
+        "Gas": 127.1,
+        "Renewables": 37.3
+      },
+      {
+        "Coal": 26.3,
+        "Oil": 140.1,
+        "Gas": 113.8,
+        "Renewables": 39
+      },
+      {
+        "Coal": 24.7,
+        "Oil": 135.8,
+        "Gas": 108.9,
+        "Renewables": 40.9
+      }
+    ],
+
+    "NT": [
+      {
+        "Coal": 0,
+        "Oil": 33.4,
+        "Gas": 49.8,
+        "Renewables": 0.7
+      },
+      {
+        "Coal": 0,
+        "Oil": 34.4,
+        "Gas": 48.1,
+        "Renewables": 0.8
+      },
+      {
+        "Coal": 0,
+        "Oil": 42.3,
+        "Gas": 46.9,
+        "Renewables": 1
+      },
+      {
+        "Coal": 0,
+        "Oil": 45.8,
+        "Gas": 86.1,
+        "Renewables": 1.1
+      },
+      {
+        "Coal": 0,
+        "Oil": 36.5,
+        "Gas": 110.1,
+        "Renewables": 1.3
+      }
+    ]
+  }
+}
