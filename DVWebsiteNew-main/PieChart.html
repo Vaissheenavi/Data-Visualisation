@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Data Visualisation"/>
+        <meta name="keywords" content="HTML, CSS, D3"/>
+        <meta name="author" content="Hanok"/>
+        <title>DataVis</title>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        </head>
+<body>
+  <style>
+    #c1 {
+        color: blueviolet;
+    }
+    #c2 {
+        color: blue;
+    }
+    #c3 {
+        color: orangered;
+    }
+    #c4 {
+        color: limegreen;
+    }
+    #c5 {
+        color: red;
+    }
+    ul{
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul li{
+        list-style: square;
+        margin-left: 25px
+    }
+</style>
+<p>
+    <a href="PieChart.html"><button>Australia</button></a>
+    <a href="vicdata.html"><button>Victoria</button></a>
+    <a href="wadata.html"><button>Western Australia</button></a>
+    <a href="qld.html"><button>Queensland</button></a>
+    <a href="tas.html"><button>Tasmania</button></a>
+    <a href="nswdata.html"><button>New South Wales</button></a>
+    <a href="sadata.html"><button>South Australia</button></a>
+  </p>
+<h1>Primary energy consumption in Australia, by fuel, energy units</h1>
+    <script>
+    //D3 Code goes here
+    var w = 300;
+    var h = 300;
+    
+    var dataset = [20,20,20,20,20];
+    var outerRadius = w/2;
+    var innerRadius = 0;
+
+    var arc = d3.arc()
+                .outerRadius(outerRadius)
+                .innerRadius(innerRadius);
+    
+    var pie = d3.pie();
+
+    var svg = d3.select("body")
+                .append("svg")
+                .attr("width",w)
+                .attr("height",h);
+    
+    var arcs = svg.selectAll("g.arc")
+                    .data(pie(dataset))
+                    .enter()
+                    .append("g")
+                    .on("mouseover",function(d){
+                        d3.select(this).transition()
+                        .attr("fill","yellow");
+                    })
+                    .on("mouseout", function(d) {
+                        d3.select(this).transition()
+                            .attr("fill", "rgb(0, 0, " + (d * 10) + ")");
+                        
+                        d3.select("tooltip").remove();
+                        })
+                    .attr("class","arc")
+                    .attr("transform", "translate(" + outerRadius + "," + outerRadius + ")");
+
+    var color = d3.scaleOrdinal(d3.schemeCategory10);               
+    
+    arcs.append("path")
+        .attr("fill",function(d,i){
+            return color(i);
+        })
+        .attr("d", function(d,i){
+            return arc(d,i);
+        });
+    
+    arcs.append("text")
+        .text(function(d){
+            return d.value +"%";
+        })
+        .attr("transform", function(d){
+            return "translate(" + arc.centroid(d)+ ")";
+        })
+
+var legendG = mySvg.selectAll(".legend") // note appending it to mySvg and not svg to make positioning easier
+  .data(pie(dataset))
+  .enter().append("g")
+  .attr("transform", function(d,i){
+    return "translate(" + (width - 110) + "," + (i * 15 + 20) + ")"; // place each legend on the right and bump each one down 15 pixels
+  })
+  .attr("class", "legend");   
+
+legendG.append("rect") // make a matching color rect
+  .attr("width", 10)
+  .attr("height", 10)
+  .attr("fill", function(d, i) {
+    return colour(i);
+  });
+
+legendG.append("text") // add the text
+  .text(function(d){
+    return d.value + "  " + d.data.emote;
+  })
+  .style("font-size", 12)
+  .attr("y", 10)
+  .attr("x", 11);
+    
+    </script>
+    <div>
+      <ul>
+          <li id="c1">2015-2016</li>
+          <li id="c2">2016-2017</li>
+          <li id="c3">2017-2018</li>
+          <li id="c4">2018-2019</li>
+          <li id="c5">2019-2020</li>
+      </ul>
+    </div>
+<br>
+<br>
+
